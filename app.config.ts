@@ -8,42 +8,38 @@ export default defineAppConfig({
       github: 'wser',
     },
     github: {
-      dir: '.starters/default/content',
-      branch: 'main',
-      repo: 'docus',
-      owner: 'nuxt-themes',
-      edit: true
+      dir: undefined,
+      branch: undefined,
+      repo: undefined,
+      owner: undefined,
+      edit: false
     },
     aside: {
       level: 0,
       collapsed: false,
       exclude: []
     },
+    filter: true,
     main: {
       padded: true,
       fluid: true
     },
     header: {
-      logo: true,
-      showLinkIcon: true,
+      logo: false,
+      showLinkIcon: false,
       exclude: [],
       fluid: true
     },
     footer: {
       credits: {
-        icon: 'IconDocus',
+        icon: '',
         text: 'Powered by W',
         href: 'https://viktor.vidakovic.info',
         target: '_blank',
       },
-      // textLinks: [
-      //   {
-      //     text: 'Nuxt',
-      //     href: 'https://nuxt.com',
-      //     target: '_blank',
-      //     rel: 'noopener'
-      //   }
-      // ]
+      textLinks: [],
+      iconLinks: [],
+      fluid: false
     }
   }
 })
